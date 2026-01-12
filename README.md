@@ -55,7 +55,8 @@ Notificação: <img width="1849" height="489" alt="notificações" src="https://
 
 1.4 Webhook
 
-O webhook irá receber os parametros do mediatype via HTTP call na URL correpondente ao webhook: #####imagem aqui#####
+O webhook irá receber os parametros do mediatype via HTTP call na URL correpondente ao webhook: <img width="537" height="748" alt="image" src="https://github.com/user-attachments/assets/c227c8aa-b284-40ed-b7e2-24f743b551a6" />
+
 
 ## 2 HTTP request - API zabbix
 A API do Zabbix possibilita coletar metricas de hosts através de um HTTP request. Esse método é usado para verificar a gravidade do problema.
@@ -64,9 +65,10 @@ A API do Zabbix possibilita coletar metricas de hosts através de um HTTP reques
 
 O N8N possui um node nativa para o zabbix. Através dele é possivel obter as metricas do evento desejado. Para isso foi configurado um HTTP request pelo metodo post, assim os parametros serão carregados pelo corpo da mensagem.
 
-######imagem aqui#####
-Para requisitar apenas as metricas necessarias e preciso especificar o corpo da requisição. O corpo usado tem o seguinte formato:
+<img width="425" height="667" alt="image" src="https://github.com/user-attachments/assets/1db20593-f498-437d-b3bd-cdd4cdf3773e" />
 
+Para requisitar apenas as metricas necessarias e preciso especificar o corpo da requisição. O corpo usado tem o seguinte formato:
+```
 {
   "jsonrpc": "2.0",
   "method": "item.get",
@@ -81,6 +83,7 @@ Para requisitar apenas as metricas necessarias e preciso especificar o corpo da 
   },
   "id": 1
 }
+```
 2.2 Credencial Zabbix
 
 Para que a requisição seja aceita pela API do zabbix é preciso de uma credencial de acesso. São necessarios a URL do zabbix e um token da API, o segundo pode ser gerado dentro do zabbix na aba Users>API tokens.
