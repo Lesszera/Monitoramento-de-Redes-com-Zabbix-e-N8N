@@ -1,5 +1,6 @@
 # Node por node do fluxo N8N
-Descrição do funcionamento e lógica do fluxo ping_loss
+Descrição do funcionamento e lógica do fluxo [ping_loss](https://github.com/Lesszera/Monitoramento-de-Redes-com-Zabbix-e-N8N/blob/main/docs/WORKFLOW)
+
 
 ## 1. Webhook (Webhook)
 Tipo: Webhook (HTTP POST)
